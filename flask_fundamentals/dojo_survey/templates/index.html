@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/process" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" name="name">
+        <br><br>
+        <label for="A">Location:</label>
+        <label for="chicago">Chicago</label>
+        <input type="radio" name="A" value="chicago">
+        <label for="nyc">NYC</label>
+        <input type="radio" name="A" value="nyc">
+        <label for="boston">Boston</label>
+        <input type="radio" name="A" value="boston">
+        <br><br>
+        <label for="languages">Favorite Language:</label>
+        <select name="languages">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="c#">C#</option>
+        </select>
+        <br><br>
+        <label for="comment">Comments (optional):</label>
+        <br>
+        <textarea name="comment" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

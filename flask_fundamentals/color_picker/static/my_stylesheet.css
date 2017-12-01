@@ -1,0 +1,12 @@
+
+.wrapper {
+    width: 90%;
+    text-align: center;
+    color: {{}}
+}
+.wrapper h1 {
+    display: inline-block;
+}
+.wrapper p {
+    color: red;
+}
