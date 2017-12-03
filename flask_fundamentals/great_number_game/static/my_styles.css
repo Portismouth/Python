@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+.wrong {
+    width: 200px;
+    height: 200px;
+    background: red;
+    color: white;
+    margin: 0 auto;
+}
+.correct {
+    width: 200px;
+    height: 200px;
+    background: green;
+    color: white;
+    margin: 0 auto;
+}
