@@ -8,17 +8,17 @@
 </head>
 <body>
     {% if color == null %}
-    <img src="{{ url_for('static', filename='img/tmnt.png')}}"> 
+        <img src="{{ url_for('static', filename='img/tmnt.png')}}"> 
     {% elif color == "blue" %}
-    <img src="{{ url_for('static', filename='img/leonardo.jpg')}}">
+        <img src="{{ url_for('static', filename='img/leonardo.jpg')}}">
     {% elif color == "orange" %}
-    <img src="{{ url_for('static', filename='img/michelangelo.jpg')}}"> 
+        <img src="{{ url_for('static', filename='img/michelangelo.jpg')}}"> 
     {% elif color == "purple" %}
-    <img src="{{ url_for('static', filename='img/donatello.jpg')}}"> 
+        <img src="{{ url_for('static', filename='img/donatello.jpg')}}"> 
     {% elif color == "red" %}
-    <img src="{{ url_for('static', filename='img/raphael.jpg')}}"> 
+        <img src="{{ url_for('static', filename='img/raphael.jpg')}}"> 
     {% else %}
-    <img src="{{ url_for('static', filename='img/notapril.jpg')}}">
+        <img src="{{ url_for('static', filename='img/notapril.jpg')}}">
     {% endif %}
 </body>
 </html>
