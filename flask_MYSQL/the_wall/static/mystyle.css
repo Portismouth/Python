@@ -1,0 +1,43 @@
+.registration {
+    width: 30%;
+    display: inline-block;
+}
+.login {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.header {
+    border-bottom: 3px solid black;
+    width: 100%;
+}
+.container {
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+}
+.header p {
+    display: inline-block;
+    margin-left: 475px;
+}
+.header h1 {
+    display: inline-block;
+}
+.header a {
+    margin-left: 10px;
+}
+.messages h6 {
+    display: inline-block;
+    margin-left: 5px;
+}
+.messages h5 {
+    display: inline-block;
+
+}
+.messages p {
+    margin-left: 10px;
+}
+.comments {
+    margin-left: 20px;
+}

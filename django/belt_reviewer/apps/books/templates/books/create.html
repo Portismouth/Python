@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <title>Belt Reviewer</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header page-header">
+            <h1>Belt Reviewer</h1>
+            <a href="{% url 'users:logout' %}" class="float-right">Logout</a>
+        
+        </div>
+        <h2>Add a book and review it, {{logged_in_user_name}}</h2>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <p>{{ message }}</p>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <div class="form-group">
+            <form action='create' method='post'>
+                {% csrf_token %}
+                <input type="hidden" name="user_id" value={{logged_in_user_id}}>
+                <label for="book_title">Book Title:</label>
+                <input type="text" name="book_title" class="form-control">
+                <label for="book_author">Author:</label>
+                <input type="text" name="book_author" class="form-control">
+                <label for="book_review">Review:</label>
+                <textarea name="book_review" class="form-control"></textarea>
+                <br>
+                <label for="book_rating">Rating:</label>
+                <select name="book_rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <input type="submit" value="Add Book and Review">
+            </form>
+        </div>
+    </div>

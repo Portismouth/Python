@@ -1,0 +1,11 @@
+.registration {
+    width: 30%;
+    display: inline-block;
+    margin: 0 auto;
+}
+.login {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}

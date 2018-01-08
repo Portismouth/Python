@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <title>Semi-RESTful Users</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+    <div class="container">
+        <div class="header page-header">
+            <h1>Semi-RESTful Users</h1>
+        </div>
+        <h2>User {{user.id}}</h2>
+        <p>Full Name: {{user.first_name}} {{user.last_name}}<br>Email: {{user.email_address}}<br>Created At: {{user.created_at}}</p>
+        <p><a href="/users/{{user.id}}/edit">Edit</a> | <a href="/users/{{user.id}}/destroy">Delete</a></p>
+        <p><a href="{% url 'users' %}">Go Back</a></p>
+        <h2>Here are the other users in the database</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Created At</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{user.id}}</td>
+                    <td>{{user.first_name}} {{user.last_name}}</td>
+                    <td>{{user.email_address}}</td>
+                    <td>{{user.created_at}}</td>
+                    <td>
+                        <a href="{{user.id}}">Show</a> |
+                        <a href="/users/{{user.id}}/edit">Edit</a> |
+                        <a href="/users/{{user.id}}/destroy">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

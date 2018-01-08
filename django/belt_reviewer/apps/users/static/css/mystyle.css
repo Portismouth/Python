@@ -1,0 +1,21 @@
+.registration {
+    width: 30%;
+    display: inline-block;
+    margin: 0 auto;
+}
+.login {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.header {
+    border-bottom: 3px solid black;
+    width: 100%;
+}
+.login-reg {
+    margin-top: 30px;
+}
+.header h1 {
+    display: inline-block;
+}

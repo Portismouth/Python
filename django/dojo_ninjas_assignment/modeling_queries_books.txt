@@ -1,0 +1,514 @@
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, dojo_ninjas, sessions
+Running migrations:
+  Applying dojo_ninjas.0002_dojo_desc... OK
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py startapp book_authors
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>cd apps
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment\apps>python manage.py startapp book_authors
+python: can't open file 'manage.py': [Errno 2] No such file or directory
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment\apps>cd..
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>cd apps
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment\apps>python ../manage.py startapp book_authors
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment\apps>cd..
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 12, 2017 - 14:10:39
+Django version 1.11, using settings 'dojo_ninjas_assignment.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py makemigrations
+No changes detected
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>cd apps
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment\apps>cd book_authors
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment\apps\book_authors>python manage.py makemigrations
+python: can't open file 'manage.py': [Errno 2] No such file or directory
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment\apps\book_authors>cd..
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment\apps>cd..
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 12, 2017 - 14:30:23
+Django version 1.11, using settings 'dojo_ninjas_assignment.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 12, 2017 - 14:31:12
+Django version 1.11, using settings 'dojo_ninjas_assignment.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Unhandled exception in thread started by <function wrapper at 0x000000000347F518
+>
+Traceback (most recent call last):
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\apps\registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\apps\config.py", line 120, in create
+    mod = import_module(mod_path)
+  File "C:\Python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named django.contrib
+Unhandled exception in thread started by <function wrapper at 0x000000000362F518
+>
+Traceback (most recent call last):
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\apps\registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\apps\config.py", line 120, in create
+    mod = import_module(mod_path)
+  File "C:\Python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named bookdjango.contrib
+Unhandled exception in thread started by <function wrapper at 0x00000000035E1518
+>
+Traceback (most recent call last):
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\apps\registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\apps\config.py", line 120, in create
+    mod = import_module(mod_path)
+  File "C:\Python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named book_authorsdjango.contrib
+Unhandled exception in thread started by <function wrapper at 0x00000000037A5128
+>
+Traceback (most recent call last):
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\utils\autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\apps\registry.py", line 108, in populate
+    app_config.import_models()
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\apps\config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assignme
+nt\apps\book_authors\models.py", line 7, in <module>
+    class Books(models.Model):
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assignme
+nt\apps\book_authors\models.py", line 9, in Books
+    desc = models.TEXT(1000)
+AttributeError: 'module' object has no attribute 'TEXT'
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 12, 2017 - 14:31:56
+Django version 1.11, using settings 'dojo_ninjas_assignment.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py makemigrations
+Migrations for 'book_authors':
+  apps\book_authors\migrations\0001_initial.py
+    - Create model Authors
+    - Create model Books
+    - Add field books to authors
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, book_authors, contenttypes, dojo_ninjas, se
+ssions
+Running migrations:
+  Applying book_authors.0001_initial... OK
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py shell
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:53:40) [MSC v.1500 64 bit (
+AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> import apps.book_authors.models import*
+  File "<console>", line 1
+    import apps.book_authors.models import*
+                                         ^
+SyntaxError: invalid syntax
+>>> import apps.book_authors.models import *
+  File "<console>", line 1
+    import apps.book_authors.models import *
+                                         ^
+SyntaxError: invalid syntax
+>>> from apps.book_authors.models import *
+>>> Books.objects.create(name="C Sharp", desc="This is a book about C Sharp")
+<Books: Books object>
+>>> Books.objects.create(name="Java", desc="This is a book about Java")
+<Books: Books object>
+>>> Books.objects.create(name="Python", desc="This is a book about Python")
+<Books: Books object>
+>>> Books.objects.create(name="PHP", desc="This is a book about PHP")
+<Books: Books object>
+>>> Books.objects.create(name="Ruby", desc="This is a book about Ruby")
+<Books: Books object>
+>>> Books.objects.all()
+<QuerySet [<Books: Books object>, <Books: Books object>, <Books: Books object>,
+<Books: Books object>, <Books: Books object>]>
+>>> Books.objects.all().name
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'name'
+>>> Books.objects.first().name
+u'C Sharp'
+>>> Books.objects.last().name
+u'Ruby'
+>>> Books.objects.all().valus()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'valus'
+>>> Books.objects.all().values()
+<QuerySet [{'updated_at': datetime.datetime(2017, 12, 12, 20, 35, 57, 325000, tz
+info=<UTC>), 'created_at': datetime.datetime(2017, 12, 12, 20, 35, 57, 325000, t
+zinfo=<UTC>), 'desc': u'This is a book about C Sharp', u'id': 1, 'name': u'C Sha
+rp'}, {'updated_at': datetime.datetime(2017, 12, 12, 20, 36, 13, 54000, tzinfo=<
+UTC>), 'created_at': datetime.datetime(2017, 12, 12, 20, 36, 13, 54000, tzinfo=<
+UTC>), 'desc': u'This is a book about Java', u'id': 2, 'name': u'Java'}, {'updat
+ed_at': datetime.datetime(2017, 12, 12, 20, 36, 31, 950000, tzinfo=<UTC>), 'crea
+ted_at': datetime.datetime(2017, 12, 12, 20, 36, 31, 950000, tzinfo=<UTC>), 'des
+c': u'This is a book about Python', u'id': 3, 'name': u'Python'}, {'updated_at':
+ datetime.datetime(2017, 12, 12, 20, 36, 44, 230000, tzinfo=<UTC>), 'created_at'
+: datetime.datetime(2017, 12, 12, 20, 36, 44, 230000, tzinfo=<UTC>), 'desc': u'T
+his is a book about PHP', u'id': 4, 'name': u'PHP'}, {'updated_at': datetime.dat
+etime(2017, 12, 12, 20, 37, 31, 847000, tzinfo=<UTC>), 'created_at': datetime.da
+tetime(2017, 12, 12, 20, 37, 31, 847000, tzinfo=<UTC>), 'desc': u'This is a book
+ about Ruby', u'id': 5, 'name': u'Ruby'}]>
+>>> Authors.objects.create(first_name="Mike",last_name="Author")
+<Authors: Authors object>
+>>> Authors.objects.create(first_name="Speros",last_name="Author")
+<Authors: Authors object>
+>>> Authors.objects.create(first_name="John",last_name="Author")
+<Authors: Authors object>
+>>> Authors.objects.create(first_name="Jadee",last_name="Author")
+<Authors: Authors object>
+>>> Authors.objects.create(first_name="Jay",last_name="Author")
+<Authors: Authors object>
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, book_authors, contenttypes, dojo_ninjas, se
+ssions
+Running migrations:
+  Applying book_authors.0001_initial... OK
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py shell
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:53:40) [MSC v.1500 64 bit (
+AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> import apps.book_authors.models import*
+  File "<console>", line 1
+    import apps.book_authors.models import*
+                                         ^
+SyntaxError: invalid syntax
+>>> import apps.book_authors.models import *
+  File "<console>", line 1
+    import apps.book_authors.models import *
+                                         ^
+SyntaxError: invalid syntax
+>>> from apps.book_authors.models import *
+>>> Books.objects.create(name="C Sharp", desc="This is a book about C Sharp")
+<Books: Books object>
+>>> Books.objects.create(name="Java", desc="This is a book about Java")
+<Books: Books object>
+>>> Books.objects.create(name="Python", desc="This is a book about Python")
+<Books: Books object>
+>>> Books.objects.create(name="PHP", desc="This is a book about PHP")
+<Books: Books object>
+>>> Books.objects.create(name="Ruby", desc="This is a book about Ruby")
+<Books: Books object>
+>>> Books.objects.all()
+<QuerySet [<Books: Books object>, <Books: Books object>, <Books: Books object>,
+<Books: Books object>, <Books: Books object>]>
+>>> Books.objects.all().name
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'name'
+>>> Books.objects.first().name
+u'C Sharp'
+>>> Books.objects.last().name
+u'Ruby'
+>>> Books.objects.all().valus()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'valus'
+>>> Books.objects.all().values()
+<QuerySet [{'updated_at': datetime.datetime(2017, 12, 12, 20, 35, 57, 325000, tz
+info=<UTC>), 'created_at': datetime.datetime(2017, 12, 12, 20, 35, 57, 325000, t
+zinfo=<UTC>), 'desc': u'This is a book about C Sharp', u'id': 1, 'name': u'C Sha
+rp'}, {'updated_at': datetime.datetime(2017, 12, 12, 20, 36, 13, 54000, tzinfo=<
+UTC>), 'created_at': datetime.datetime(2017, 12, 12, 20, 36, 13, 54000, tzinfo=<
+UTC>), 'desc': u'This is a book about Java', u'id': 2, 'name': u'Java'}, {'updat
+ed_at': datetime.datetime(2017, 12, 12, 20, 36, 31, 950000, tzinfo=<UTC>), 'crea
+ted_at': datetime.datetime(2017, 12, 12, 20, 36, 31, 950000, tzinfo=<UTC>), 'des
+c': u'This is a book about Python', u'id': 3, 'name': u'Python'}, {'updated_at':
+ datetime.datetime(2017, 12, 12, 20, 36, 44, 230000, tzinfo=<UTC>), 'created_at'
+: datetime.datetime(2017, 12, 12, 20, 36, 44, 230000, tzinfo=<UTC>), 'desc': u'T
+his is a book about PHP', u'id': 4, 'name': u'PHP'}, {'updated_at': datetime.dat
+etime(2017, 12, 12, 20, 37, 31, 847000, tzinfo=<UTC>), 'created_at': datetime.da
+tetime(2017, 12, 12, 20, 37, 31, 847000, tzinfo=<UTC>), 'desc': u'This is a book
+ about Ruby', u'id': 5, 'name': u'Ruby'}]>
+>>> Authors.objects.create(first_name="Mike",last_name="Author")
+<Authors: Authors object>
+>>> Authors.objects.create(first_name="Speros",last_name="Author")
+<Authors: Authors object>
+>>> Authors.objects.create(first_name="John",last_name="Author")
+<Authors: Authors object>
+>>> Authors.objects.create(first_name="Jadee",last_name="Author")
+<Authors: Authors object>
+>>> Authors.objects.create(first_name="Jay",last_name="Author")
+<Authors: Authors object>
+>>> exit()
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py makemigrations
+You are trying to add a non-nullable field 'notes' to authors without a default;
+ we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null
+value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g.
+ timezone.now
+Type 'exit' to exit this prompt
+>>> "This is an author"
+Migrations for 'book_authors':
+  apps\book_authors\migrations\0002_authors_notes.py
+    - Add field notes to authors
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, book_authors, contenttypes, dojo_ninjas, se
+ssions
+Running migrations:
+  Applying book_authors.0002_authors_notes... OK
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\dojo_ninjas_assi
+gnment>python manage.py shell
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:53:40) [MSC v.1500 64 bit (
+AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> this_author = Authors.objects.first()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Authors' is not defined
+>>> from apps.books_authors.models import *
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+ImportError: No module named books_authors.models
+>>> from apps.book_authors.models import *
+>>> this_author = Authors.objects.first()
+>>> book1 = Books.objects.get(id=1)
+>>> book2 = Books.objects.get(id=2)
+>>> this_author.books.add(book1)
+>>> this_author.books.add(book2)
+>>> this_author = Authors.objects.get(id=2)
+>>> book3 = Books.objects.get(id=3)
+>>> this_author.books.add(book1)
+>>> this_author.books.add(book2)
+>>> this_author.books.add(book3)
+>>> book4 = Books.objects.get(id=4)
+>>> this_author = Authors.objects.get(id=3)
+>>> this_author.books.add(book1)
+>>> this_author.books.add(book2)
+>>> this_author.books.add(book3)
+>>> this_author.books.add(book4)
+>>> all_books = Books.objects.all()
+>>> this_author = Authors.objects.get(id=4)
+>>> this_author.books.add(all_books)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\fields\related_descriptors.py", line 931, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\fields\related_descriptors.py", line 1080, in _add_ite
+ms
+    '%s__in' % target_field_name: new_ids,
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\query.py", line 781, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\query.py", line 799, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\sql\query.py", line 1260, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\sql\query.py", line 1286, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\sql\query.py", line 1216, in build_filter
+    condition = lookup_class(lhs, value)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\fields\related_lookups.py", line 56, in get_prep_looku
+p
+    self.rhs = [target_field.get_prep_value(v) for v in self.rhs]
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\fields\__init__.py", line 962, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'QuerySet'
+>>> book5 = Books.objects.get(id=5)
+>>> this_author.books.add(book1)
+>>> this_author.books.add(book2)
+>>> this_author.books.add(book3)
+>>> this_author.books.add(book4)
+>>> this_author.books.add(book5)
+>>> book3
+<Books: Books object>
+>>> Books.objects.first().authors
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Books' object has no attribute 'authors'
+>>> Books.objects.first().Authors
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Books' object has no attribute 'Authors'
+>>> Books.objects.book3.values()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Manager' object has no attribute 'book3'
+>>> Books.objects.values()
+
+<QuerySet [{'updated_at': datetime.datetime(2017, 12, 12, 20, 35, 57, 325000, tz
+info=<UTC>), 'created_at': datetime.datetime(2017, 12, 12, 20, 35, 57, 325000, t
+zinfo=<UTC>), 'desc': u'This is a book about C Sharp', u'id': 1, 'name': u'C Sha
+rp'}, {'updated_at': datetime.datetime(2017, 12, 12, 20, 36, 13, 54000, tzinfo=<
+UTC>), 'created_at': datetime.datetime(2017, 12, 12, 20, 36, 13, 54000, tzinfo=<
+UTC>), 'desc': u'This is a book about Java', u'id': 2, 'name': u'Java'}, {'updat
+ed_at': datetime.datetime(2017, 12, 12, 20, 36, 31, 950000, tzinfo=<UTC>), 'crea
+ted_at': datetime.datetime(2017, 12, 12, 20, 36, 31, 950000, tzinfo=<UTC>), 'des
+c': u'This is a book about Python', u'id': 3, 'name': u'Python'}, {'updated_at':
+ datetime.datetime(2017, 12, 12, 20, 36, 44, 230000, tzinfo=<UTC>), 'created_at'
+: datetime.datetime(2017, 12, 12, 20, 36, 44, 230000, tzinfo=<UTC>), 'desc': u'T
+his is a book about PHP', u'id': 4, 'name': u'PHP'}, {'updated_at': datetime.dat
+etime(2017, 12, 12, 20, 37, 31, 847000, tzinfo=<UTC>), 'created_at': datetime.da
+tetime(2017, 12, 12, 20, 37, 31, 847000, tzinfo=<UTC>), 'desc': u'This is a book
+ about Ruby', u'id': 5, 'name': u'Ruby'}]>
+>>> Books.objects.first().values()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Books' object has no attribute 'values'
+>>> Books.objects.first()
+<Books: Books object>
+>>> Books.objects.first().name
+u'C Sharp'
+>>> Books.objects.first().author
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Books' object has no attribute 'author'
+>>> book3.authors.all
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Books' object has no attribute 'authors'
+>>> book3.Authors.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Books' object has no attribute 'Authors'
+>>> this_author.books.all()
+<QuerySet [<Books: Books object>, <Books: Books object>, <Books: Books object>,
+<Books: Books object>, <Books: Books object>]>

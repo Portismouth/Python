@@ -1,0 +1,65 @@
+
+(djangoEnv) C:\Users\Ozzy\Desktop\DojoAssignments\Python\django\users_assignment
+>python manage.py shell
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:53:40) [MSC v.1500 64 bit (
+AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from apps.user_login.models import *
+>>> user_login.objects.create(first_name="Ozzy", last_name="Gonzalez", email_add
+ress="ozzy.gonzalez@gmail.com", age=35)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'user_login' is not defined
+>>> User_login.objects.create(first_name="Ozzy", last_name="Gonzalez", email_add
+ress="ozzy.gonzalez@gmail.com", age=35)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\query.py", line 391, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\Ozzy\Desktop\DojoAssignments\myEnvironments\djangoEnv\lib\site-
+packages\django\db\models\base.py", line 571, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % li
+st(kwargs)[0])
+TypeError: 'age' is an invalid keyword argument for this function
+>>> User_login.objects.create(first_name="Ozzy", last_name="Gonzalez", email_add
+ress="ozzy.gonzalez@gmail.com")
+<User_login: User_login object>
+>>> User_login.objects.create(first_name="Jeannie", last_name="Giannone", email_
+address="jeannie@ozzy.com")
+<User_login: User_login object>
+>>> User_login.objects.all()
+<QuerySet [<User_login: User_login object>, <User_login: User_login object>]>
+>>> User_login.objects.order_by("first_name")
+<QuerySet [<User_login: User_login object>, <User_login: User_login object>]>
+>>> User_login.objects.create(first_name="Matt", last_name="Mattson", email_addr
+ess="matt@ozzy.com")
+<User_login: User_login object>
+>>> u = User_login.objects.get(id=3)
+>>> u.last_name = "pooper"
+>>> u.save
+<bound method User_login.save of <User_login: User_login object>>
+>>> u.save()
+>>> User_login.objects.last().last_name
+u'pooper'
+>>> User_login.objects.get(id=3).delete()
+(1, {u'user_login.User_login': 1})
+>>> User_login.objects.all().id
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'id'
+>>> User_login.objects.all().name
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'name'
+>>> User_login.objects.all().first_name
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'first_name'
+>>> User_login.objects.all()
+<QuerySet [<User_login: User_login object>, <User_login: User_login object>]>
+>>>

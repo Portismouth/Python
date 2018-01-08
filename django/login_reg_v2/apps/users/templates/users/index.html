@@ -1,0 +1,9 @@
+<form action="/register" method="post" novalidate>
+    {% csrf_token %}
+
+    <table border="1">
+        {{ form }}
+    </table>
+
+    <button type="submit">Submit</button>
+</form>

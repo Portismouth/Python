@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <title>Semi-RESTful Users</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header page-header">
+            <h1>(edit) Semi-RESTful Users</h1>
+        </div>
+        <h2>Edit User {{user.id}}</h2>
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <p>{{ message }}</p>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <div class="form-group">
+            <form action='update' method='post'>
+                {% csrf_token %}
+                <input type="hidden" name="user_id" value="{{user.id}}">
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" class="form-control" placeholder="{{user.first_name}}">
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" class="form-control" placeholder="{{user.last_name}}">
+                <label for="email_address">Email:</label>
+                <input type="text" name="email_address" class="form-control" placeholder="{{user.email_address}}">
+                <br>
+                <input type="submit" value="Update">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
